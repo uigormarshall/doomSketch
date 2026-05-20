@@ -28,7 +28,10 @@ services:
     image: doomsketch-web:latest
     restart: unless-stopped
     ports:
-      - "${APP_PORT:-80}:80"
+      # Por padrão publica só no loopback (127.0.0.1:8080) para o nginx do host
+      # terminar o TLS e fazer reverse proxy. Para expor direto (sem proxy):
+      #   APP_BIND=0.0.0.0 APP_PORT=80 docker compose up -d
+      - "${APP_BIND:-127.0.0.1}:${APP_PORT:-8080}:80"
     volumes:
       # nginx serve as imagens enviadas (somente leitura) do mesmo volume do app.
       - storage-uploads:/var/www/html/storage/app/public:ro
