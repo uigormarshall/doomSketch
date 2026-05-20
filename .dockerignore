@@ -1,0 +1,39 @@
+# VCS / tooling
+.git
+.github
+.gitignore
+.gitattributes
+.editorconfig
+
+# Dependencies (reinstaladas nos estágios de build)
+/vendor
+/node_modules
+
+# Secrets / ambiente local
+.env
+.env.backup
+.env.production
+auth.json
+
+# Banco local e artefatos de build que serão regerados
+/database/database.sqlite
+/public/build
+/public/hot
+/public/storage
+
+# Conteúdo runtime do storage (mantém a estrutura de pastas via .gitignore)
+/storage/app/public/*
+/storage/app/private/livewire-tmp/*
+/storage/logs/*
+/storage/framework/cache/data/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/bootstrap/cache/*.php
+
+# Docker (não precisa dentro da imagem)
+docker-compose.yml
+docker-compose.*.yml
+
+# Misc
+README.md
+LICENSE
