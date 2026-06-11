@@ -1,5 +1,7 @@
 # Doomsketch
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/4f9e5d1062264da9be78ec495daa28b7)](https://app.codacy.com/gh/uigormarshall/doomSketch?utm_source=github.com&utm_medium=referral&utm_content=uigormarshall/doomSketch&utm_campaign=Badge_Grade)
+
 > Desafios de arte cronometrados, sem punição por faltar um dia.
 
 Doomsketch é uma plataforma de **desafios de desenho diários** (no espírito do Inktober e do Lospec) com identidade visual indie/dark. Artistas criam jornadas diárias com prompts, definem paletas de cores restritas e podem **clonar e customizar** desafios criados por outras pessoas.
